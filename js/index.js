@@ -9,32 +9,51 @@ function getAnElementID(id) {
 const callButton = getAnElementID("joruri-call-button");
 const callClearButton = getAnElementID("call-clear-btn");
 const copyButton = getAnElementID("copy-btn-id");
-const heartCountNumber = getAnElementID("heart-number"); 
+const heartCountNumber = getAnElementID("heart-number");
+const coinCountNumber = getAnElementID("coin-number");
 
 const callButtonClassName = document.getElementsByClassName("call-btn");
 const heartCardClassName = document.getElementsByClassName("heart-card");
 
 
-let count = Number(heartCountNumber.innerText);
+let heartCount = Number(heartCountNumber.innerText);
+let coinCount = Number(coinCountNumber.innerText);
 
 /*Heart icon click count*/
 
 for(let heartSingleCardClassName of heartCardClassName){
     heartSingleCardClassName.addEventListener("click", function(){
 
-        count = count + 1;
-        heartCountNumber.innerText = count;      
+        heartCount = heartCount + 1;
+        heartCountNumber.innerText = heartCount;      
 
     })
 }
 
 
-//Traversing call button
+//Coin count number functionality
 console.log(callButtonClassName);
 
 for (let singleCall of callButtonClassName){
     singleCall.addEventListener("click", function(){
-        alert("Hello clicked")
+        if(coinCount >= 20){
+            
+            let card = this.closest(".card");
+            console.log(card)
+            let cardTitle = card.querySelector(".card-title").innerText;
+            let hotLine = card.querySelector(".hotline").innerText;
+            
+            let alertInfo ="Calling " + cardTitle + " Hotline: " + hotLine;
+
+            alert(alertInfo);
+
+            coinCount= coinCount - 20;
+            coinCountNumber.innerText = coinCount;
+        }
+        else{
+
+            alert("You don't have sufficient balance. Please recharge...");
+        }
     })
 }
 
