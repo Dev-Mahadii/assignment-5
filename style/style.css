@@ -55,6 +55,53 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 475px){
+    .image-btn {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    gap: 5px;
+    /* spacing between image and text */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #edfff1;
+    color: #000;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.image-btn img {
+    width: 20px;
+    height: 00px;
+}
+
+
+.image-copy-btn {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    gap: 5px;
+    /* spacing between image and text */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00a73e;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    }
+
+.logo{
+    margin-bottom: 16px;
+}
+
+.logo img{
+    width: 45%;
+}
+
+}
+
 .hero-section {
     background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1), rgba(0, 103, 71, 1) 50%, rgba(1, 50, 35, 1) 100%);
     padding: 20px;

@@ -101,21 +101,6 @@ for(singleCopy of copyButtonClassName){
 }
 
 
-
-// copyButton.addEventListener("click", function () {
-
-//     for(singleCopy of copyButton){
-//         singleCopy.addEventListener()
-//     }
-  
-//   let card = this.closest(".card");
-//   let hotLine = card.querySelector(".hotline").innerText;
-
-
-//   const copiedText = navigator.clipboard.writeText(hotLine);
-//   console.log(copiedText);
-// });
-
 // Current time
 
 function getCurrentTime() {
