@@ -1,0 +1,119 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1024px){
+    .main-container{
+        padding: 20px;
+    }
+}
+
+
+
+/*Header Image button*/
+
+.image-btn {
+    display: flex;
+    align-items: center;
+    width: 123px;
+    gap: 10px;
+    /* spacing between image and text */
+    padding: 11px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #edfff1;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.image-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.image-copy-btn {
+    display: flex;
+    align-items: center;
+    width: 123px;
+    gap: 10px;
+    /* spacing between image and text */
+    padding: 11px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00a73e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-section {
+    background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1), rgba(0, 103, 71, 1) 50%, rgba(1, 50, 35, 1) 100%);
+    padding: 20px;
+}
+
+.hero-section img{
+    height: 92px;
+    width: 92px;
+}
+
+/* @media screen and (max-width: 475px){
+    .nav-btn{
+        display: none;
+    }
+} */
+
+
+
+/*card style*/
+
+.card-body{
+    padding: 0;
+    gap: 16px;
+}
+
+.card{
+    padding: 32px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    .card{
+        padding: 16px;
+    }
+}
+
+.copy-btn , .call-btn{
+
+    padding: 10px;
+    border: 1px solid #D4D6D5;
+
+
+}
+
+.copy-btn:hover{
+    background-color: #00A63E;
+    color: #fff;
+    border: 1px solid #00A63E;
+}
+
+.call-btn:hover{
+    background-color: #00A63E;
+    color: #fff;
+    border: 1px solid #00A63E;
+}
+
+.service-tag{
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    width: fit-content;
+}
