@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Call</title>
 
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
 
     <!--tailwind cdn-->
 
@@ -14,318 +13,384 @@
 
     <!--daisy ui cdn -->
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!--font awesome cdn-->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-</head>
-
-<body class="bg-[#f5fff6]">
-
+  <body class="bg-[#f5fff6]">
     <div class="header md:flex justify-between bg-white">
-        <div class="logo">
-            <img src="./assets/site-logo.png" alt="site-logo" srcset="">
-        </div>
+      <div class="logo">
+        <img src="./assets/site-logo.png" alt="site-logo" srcset="" />
+      </div>
 
-        <div class="nav-btn flex gap-5">
-            <button class="image-btn justify-center" id="heart-btn-nav"><span id="heart-number">0</span><img src="./assets/heart.png" /></button>
-            <button class="image-btn justify-center" id="coin-btn-nav"><span id="coin-number">100</span><img src="./assets/coin.png" /></button>
-            <button class="image-copy-btn justify-center" id="copy-btn-nav"><span id="copy-number">0</span> Copy</button>
-        </div>
+      <div class="nav-btn flex gap-5">
+        <button class="image-btn justify-center" id="heart-btn-nav">
+          <span id="heart-number">0</span><img src="./assets/heart.png" />
+        </button>
+        <button class="image-btn justify-center" id="coin-btn-nav">
+          <span id="coin-number">100</span><img src="./assets/coin.png" />
+        </button>
+        <button class="image-copy-btn justify-center" id="copy-btn-nav">
+          <span id="copy-number">0</span> Copy
+        </button>
+      </div>
     </div>
 
-    <div class="hero-section flex flex-col justify-start items-center gap-3 w-full">
-        <img src="./assets/bangladesh-govt-logo.png" alt="logo" srcset="">
-        <h1 class="text-4xl text-white font-bold text-center">জরুরি সেবা ডিরেক্টরি</h1>
-        <p class="text-[16px] text-white font-semibold text-center">Government Emergency Services at Your Fingertip – A
-            Project by Government of the People’s Republic of Bangladesh</p>
+    <div
+      class="hero-section flex flex-col justify-start items-center gap-3 w-full"
+    >
+      <img src="./assets/bangladesh-govt-logo.png" alt="logo" srcset="" />
+      <h1 class="text-4xl text-white font-bold text-center">
+        জরুরি সেবা ডিরেক্টরি
+      </h1>
+      <p class="text-[16px] text-white font-semibold text-center">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
     </div>
 
-
-    <div class="w-11/12 py-6 mx-auto grid lg:grid-cols-12 md:grid-cols-12 gap-5">
-        <div class="left-container grid lg:grid-cols-3 md:grid-cols-2 lg:col-span-9 md:col-span-12 gap-5">
-
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/alert.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">জাতীয় জরুরি সেবা</h2>
-                        <p>National Emergency</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">999</h2>
-                        <p class="service-tag">সার্বজনীন</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" id="joruri-call-button" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
+    <div
+      class="w-11/12 py-6 mx-auto grid lg:grid-cols-12 md:grid-cols-12 gap-5"
+    >
+      <div
+        class="left-container grid lg:grid-cols-3 md:grid-cols-2 lg:col-span-9 md:col-span-12 gap-5"
+      >
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/alert.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">জাতীয় জরুরি সেবা</h2>
+              <p>National Emergency</p>
+            </div>
+            <div>
+              <h2 class="card-title">999</h2>
+              <p class="service-tag">সার্বজনীন</p>
             </div>
 
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/police.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">পুলিশ</h2>
-                        <p>Police</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">999</h2>
-                        <p class="service-tag">পুলিশ</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a
+                href="#"
+                id="joruri-call-button"
+                class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
             </div>
-
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/fire-service.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">ফায়ার সার্ভিস</h2>
-                        <p>Fire Service</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">999</h2>
-                        <p class="service-tag">ফায়ার</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/ambulance.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">অ্যাম্বুলেন্স</h2>
-                        <p>Ambulance</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">1994-999999</h2>
-                        <p class="service-tag">স্বাস্থ্য</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/alert.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">নারী ও শিশু সহায়তা</h2>
-                        <p>Women & Child Helpline</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">109</h2>
-                        <p class="service-tag">সহায়তা</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/alert.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">দুদক</h2>
-                        <p>Anti-Corruption</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">106</h2>
-                        <p class="service-tag">সরকারি</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/alert.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">বিদ্যুত বিভ্রাট</h2>
-                        <p>Electricity Outage</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">16216</h2>
-                        <p class="service-tag">বিদ্যুৎ</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/alert.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">ব্র্যাক</h2>
-                        <p>Brac</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">16445</h2>
-                        <p class="service-tag">এনজিও</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
-                <div class="flex justify-between">
-                    <figure>
-                        <img src="./assets/alert.png" alt="Shoes" />
-                    </figure>
-                    <figure>
-                        <img class="h-6 w-6" src="./assets/heart.png" alt="Shoes" />
-                    </figure>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="card-title">বাংলাদেশ রেলওয়ে</h2>
-                        <p>Bangladesh Railway</p>
-                    </div>
-                    <div>
-                        <h2 class="card-title">163</h2>
-                        <p class="service-tag">পরিবহন</p>
-                    </div>
-
-                    <div class="card-actions flex justify-between">
-                        <a href="#" class="copy-btn w-[48%] text-center border rounded-lg" id="copy-btn-id"><i
-                                class="fa-regular fa-copy"></i> Copy</a>
-                        <a href="#" class="call-btn w-[48%] text-center border rounded-lg"><i
-                                class="fa-solid fa-phone"></i> Call</a>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
 
-        <div class="right-containe lg:col-span-3 md:col-span-12 bg-white border-white shadow-sm rounded-xl p-6">
-
-            <div class="flex justify-between mb-5 items-center">
-                <div>
-                    <h2 class=""><i class="fa-regular fa-clock"></i> Call History</h2>
-                </div>
-                <div>
-                    <a href="#" id="call-clear-btn" class="bg-[#00A63E] text-white px-9 py-3 rounded-[50px]">Clear</a>
-                </div>
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/police.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">পুলিশ</h2>
+              <p>Police</p>
+            </div>
+            <div>
+              <h2 class="card-title">999</h2>
+              <p class="service-tag">পুলিশ</p>
             </div>
 
-            <div id="history-container">
-                
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a href="#" class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
             </div>
-
-
+          </div>
         </div>
 
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/fire-service.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">ফায়ার সার্ভিস</h2>
+              <p>Fire Service</p>
+            </div>
+            <div>
+              <h2 class="card-title">999</h2>
+              <p class="service-tag">ফায়ার</p>
+            </div>
+
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a href="#" class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/ambulance.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">অ্যাম্বুলেন্স</h2>
+              <p>Ambulance</p>
+            </div>
+            <div>
+              <h2 class="card-title">1994-999999</h2>
+              <p class="service-tag">স্বাস্থ্য</p>
+            </div>
+
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a href="#" class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/alert.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">নারী ও শিশু সহায়তা</h2>
+              <p>Women & Child Helpline</p>
+            </div>
+            <div>
+              <h2 class="card-title">109</h2>
+              <p class="service-tag">সহায়তা</p>
+            </div>
+
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a href="#" class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/alert.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">দুদক</h2>
+              <p>Anti-Corruption</p>
+            </div>
+            <div>
+              <h2 class="card-title">106</h2>
+              <p class="service-tag">সরকারি</p>
+            </div>
+
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a href="#" class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/alert.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">বিদ্যুত বিভ্রাট</h2>
+              <p>Electricity Outage</p>
+            </div>
+            <div>
+              <h2 class="card-title">16216</h2>
+              <p class="service-tag">বিদ্যুৎ</p>
+            </div>
+
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a href="#" class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/alert.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">ব্র্যাক</h2>
+              <p>Brac</p>
+            </div>
+            <div>
+              <h2 class="card-title">16445</h2>
+              <p class="service-tag">এনজিও</p>
+            </div>
+
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a href="#" class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm rounded-xl bg-white">
+          <div class="flex justify-between">
+            <figure>
+              <img src="./assets/alert.png" alt="Shoes" />
+            </figure>
+            <figure>
+              <img class="h-6 w-6 heart-card" src="./assets/heart.png" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">বাংলাদেশ রেলওয়ে</h2>
+              <p>Bangladesh Railway</p>
+            </div>
+            <div>
+              <h2 class="card-title">163</h2>
+              <p class="service-tag">পরিবহন</p>
+            </div>
+
+            <div class="card-actions flex justify-between">
+              <a
+                href="#"
+                class="copy-btn w-[48%] text-center border rounded-lg"
+                id="copy-btn-id"
+                ><i class="fa-regular fa-copy"></i> Copy</a
+              >
+              <a href="#" class="call-btn w-[48%] text-center border rounded-lg"
+                ><i class="fa-solid fa-phone"></i> Call</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="right-containe lg:col-span-3 md:col-span-12 bg-white border-white shadow-sm rounded-xl p-6"
+      >
+        <div class="flex justify-between mb-5 items-center">
+          <div>
+            <h2 class=""><i class="fa-regular fa-clock"></i> Call History</h2>
+          </div>
+          <div>
+            <a
+              href="#"
+              id="call-clear-btn"
+              class="bg-[#00A63E] text-white px-9 py-3 rounded-[50px]"
+              >Clear</a
+            >
+          </div>
+        </div>
+
+        <div id="history-container"></div>
+      </div>
     </div>
-
 
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>

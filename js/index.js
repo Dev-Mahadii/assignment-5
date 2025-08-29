@@ -9,8 +9,24 @@ function getAnElementID(id) {
 const callButton = getAnElementID("joruri-call-button");
 const callClearButton = getAnElementID("call-clear-btn");
 const copyButton = getAnElementID("copy-btn-id");
+const heartCountNumber = getAnElementID("heart-number"); 
 
 const callButtonClassName = document.getElementsByClassName("call-btn");
+const heartCardClassName = document.getElementsByClassName("heart-card");
+
+
+let count = Number(heartCountNumber.innerText);
+
+/*Heart icon click count*/
+
+for(let heartSingleCardClassName of heartCardClassName){
+    heartSingleCardClassName.addEventListener("click", function(){
+
+        count = count + 1;
+        heartCountNumber.innerText = count;      
+
+    })
+}
 
 
 //Traversing call button
