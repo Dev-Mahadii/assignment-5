@@ -32,7 +32,7 @@ for (let heartSingleCardClassName of heartCardClassName) {
 console.log(callButtonClassName);
 
 for (let singleCall of callButtonClassName) {
-  singleCall.addEventListener("click", function () {
+  singleCall.addEventListener("click", function() {
     if (coinCount >= 20) {
       //updating coins
 
@@ -67,7 +67,9 @@ for (let singleCall of callButtonClassName) {
 
       historyContainer.appendChild(singleHistoryContainer);
     } else {
-      alert("You don't have sufficient balance. Please recharge...");
+
+        e.preventDefault();
+        alert("You don't have sufficient balance. Please recharge...");
     }
   });
 }

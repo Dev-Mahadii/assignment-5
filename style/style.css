@@ -146,6 +146,11 @@
 
 }
 
+.call-btn{
+    background-color: #00A63E;
+    color: #fff;
+}
+
 .copy-btn:hover{
     background-color: #00A63E;
     color: #fff;
@@ -153,9 +158,8 @@
 }
 
 .call-btn:hover{
-    background-color: #00A63E;
-    color: #fff;
-    border: 1px solid #00A63E;
+    background-color: transparent;
+    color: #000;
 }
 
 .service-tag{
