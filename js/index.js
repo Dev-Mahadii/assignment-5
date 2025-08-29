@@ -103,15 +103,15 @@ copyButton.addEventListener("click", function () {
 // Current time 
 
 function getCurrentTime() {
-  let now = new Date();
-  let hours = now.getHours();
-  let minutes = String(now.getMinutes()).padStart(2, '0');
-  let seconds = String(now.getSeconds()).padStart(2, '0');
+  let date = new Date();
+  let hour = date.getHours();
+  let minute = String(date.getMinutes()).padStart(2, '0');
+  let second = String(date.getSeconds()).padStart(2, '0');
   
   // Convert to 12-hour format
-  let ampm = hours >= 12 ? 'PM' : 'AM';
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
+  let amPm = hour >= 12 ? 'PM' : 'AM';
+  hour = hour % 12;
+  hour = hour ? hour : 12; // the hour '0' should be '12'
   
-  return `${hours}:${minutes}:${seconds} ${ampm}`;
+  return `${hour}:${minute}:${second} ${amPm}`;
 }
